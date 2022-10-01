@@ -1,0 +1,4 @@
+// prisma/schma.prismaのオートフォーマット
+{
+  "[prisma]": { "editor.defaultFormatter": "Prisma.prisma" }
+}
