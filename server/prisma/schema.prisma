@@ -25,5 +25,5 @@ model portfolio {
   updatedAt   DateTime @updatedAt()
   title       String
   description String?
-  like        Int
+  like        Int      @default(0)
 }
