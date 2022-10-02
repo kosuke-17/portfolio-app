@@ -14,7 +14,16 @@ model User {
   id        String   @id @default(cuid())
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt()
+  name      String?
   email     String   @unique
-  name      String
   password  String
+}
+
+model portfolio {
+  id          String   @id @default(cuid())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt()
+  title       String
+  description String?
+  like        Int
 }
